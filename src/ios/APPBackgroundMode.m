@@ -166,18 +166,18 @@ NSString* const kAPPBackgroundEventDeactivate = @"deactivate";
 {
     AVAudioSession* session = [AVAudioSession
                                sharedInstance];
-
+    // Not necesary for laTotuga
     // Don't activate the audio session yet
-    [session setActive:NO error:NULL];
+    // [session setActive:NO error:NULL];
 
     // Play music even in background and dont stop playing music
     // even another app starts playing sound
-    [session setCategory:AVAudioSessionCategoryPlayback
-             withOptions:AVAudioSessionCategoryOptionMixWithOthers
-                   error:NULL];
+    // [session setCategory:AVAudioSessionCategoryPlayback
+             //withOptions:AVAudioSessionCategoryOptionMixWithOthers
+    //               error:NULL];
 
     // Active the audio session
-    [session setActive:YES error:NULL];
+    // [session setActive:YES error:NULL];
 };
 
 #pragma mark -
